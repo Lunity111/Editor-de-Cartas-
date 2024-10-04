@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modificador de Tarjetas</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Personalizador de Tarjetas Mágico</h1>
+  </header>
+
+  <div class="container">
+    <!-- Apartado izquierdo (visualización de la tarjeta) -->
+    <div class="card-preview">
+      <div id="card" class="card">
+        <div id="border-frame" class="border-frame">
+            <p id="recipient-name" class="recipient-name">Nombre del destinatario</p>
+            <h1 id="card-title" class="card-title">Título de la carta</h1>
+          <div id="divider" class="divider">
+            <img id="card-image" src="default-image.jpg" alt="Imagen" class="card-image">
+          </div>
+          <p id="card-body" class="card-body">Texto del cuerpo de la carta.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apartado derecho (controles de personalización) -->
+    <div class="controls">
+      <label for="theme">Tema de la carta:</label>
+      <select id="theme">
+        <option value="tema1">Mistico</option>
+        <option value="tema2">Estrellas</option>
+        <option value="tema3">Paisajes</option>
+      </select>
+
+      <label for="divider-color">Color del divisor:</label>
+      <input type="color" id="divider-color" value="#ff0000">
+
+      <label>Selecciona un marco:</label>
+      <div class="frame-options">
+        <label><input type="radio" name="frame" value="frame1"> <img src="./img/marco2.jpeg" alt="Marco 1"></label>
+        <label><input type="radio" name="frame" value="frame2"> <img src="./img/marco4.jpeg" alt="Marco 2"></label>
+        <label><input type="radio" name="frame" value="frame3"> <img src="./img/marco1.jpeg" alt="Marco 3"></label>
+      </div>
+
+      <label>Selecciona una imagen:</label>
+      <div class="image-options">
+        <label><input type="radio" name="image" value="image1"> <img src="./img/img1.jpeg" alt="Imagen 1"></label>
+        <label><input type="radio" name="image" value="image2"> <img src="./img/img3.jpeg" alt="Imagen 2"></label>
+        <label><input type="radio" name="image" value="image3"> <img src="./img/img4.jpeg" alt="Imagen 3"></label>
+      </div>
+
+      <label>Nombre del destinatario:</label>
+      <input type="text" id="recipient-input" placeholder="Escribe el nombre...">
+
+      <label>Título de la carta:</label>
+      <input type="text" id="title-input" placeholder="Escribe el título...">
+
+      <label>Texto del cuerpo de la carta:</label>
+      <textarea id="body-input" placeholder="Escribe el texto..."></textarea>
+
+      <label>Color del texto:</label>
+      <input type="color" id="text-color" value="#000000">
+
+      <button id="show-button">Mostrar tarjeta</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 - Luna Amaité Solis Ortega, EVN402s</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

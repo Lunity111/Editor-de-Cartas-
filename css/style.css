@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../img/img2.jpeg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-attachment: fixed; /* Para el efecto parallax */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #333;
+  }
+   
+  
+  header {
+    background-color: #118792; /* Púrpura grisáceo moderno */
+    color: #fafafa; /* Blanco suave */
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Cinzel', serif; /* Título elegante */
+    letter-spacing: 1px;
+    border-radius: 0 0 15px 15px; /* Borde suavizado */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: #2c2c2c; /* Color gris oscuro elegante */
+    color: #fafafa;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px 15px 0 0; /* Borde suavizado */
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.384);
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-grow: 1;
+    gap: 30px; /* Espaciado moderno entre secciones */
+  }
+  
+  .card-preview, .controls {
+    padding: 20px;
+    width: 50%;
+  }
+  
+  .card-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #d1d1d1; /* Borde suave y moderno */
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card {
+    padding: 20px;
+    background-color: #fff;
+    width: 300px;
+    text-align: center;
+    border: none; /* Eliminamos el borde fuerte */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suavizamos los efectos */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .border-frame {
+    border: 3px solid #4b918a; /* Verde jade apagado y moderno */
+    padding: 10px;
+    border-radius: 10px; /* Bordes suaves */
+  }
+  
+  .divider {
+    background-color: #9253ad; /* Morado suave y moderno */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Cambio de color más fluido */
+  }
+  
+  .card-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #f5b700; /* Amarillo dorado suave */
+  }
+  
+  .recipient-name {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333333;
+    font-weight: 500;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #4b4453; /* Púrpura grisáceo moderno */
+    font-weight: 600;
+  }
+  
+  .card-body {
+    font-size: 1.2rem;
+    color: #555555;
+    line-height: 1.5;
+  }
+  
+  .controls {
+    background-color: #ffffff;
+    border: 2px solid #d1d1d1;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .controls label {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4b4453;
+  }
+  
+  .controls input, .controls select, .controls textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+    background-color: #f0f4f5; /* Fondo suave */
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .controls input:focus, .controls select:focus, .controls textarea:focus {
+    border-color: #9253ad; /* Enfoque con morado místico */
+  }
+  
+  .frame-options, .image-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .frame-options img, .image-options img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .frame-options img:hover, .image-options img:hover {
+    border-color: #9253ad;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #4b918a; /* Verde jade moderno */
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #b35d77; /* Rojo suave al pasar */
+  }
+  
